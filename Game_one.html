@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-toe</title>
+
+</head>
+
+<style>
+    .square {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        font: 18pt;
+        font-weight: bold;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+</style>
+
+<script>
+    function startgame() {
+        document.turn = "x";
+
+        setMessage(document.turn + " gets to start.");
+    }
+
+    function setMessage(msg) {
+        document.getElementById("message").innerText = msg;
+    }
+
+</script>
+
+<body onload="startgame();">
+    <h1>Welcome to Tic-Tac-Toe game!!!!</h1>
+
+    <div id="message">messages will go here</div>
+
+    <table border="1">
+        <tr>
+            <td class="square">x</td>
+            <td class="square">x</td>
+            <td class="square">o</td>
+        </tr>
+        <tr>
+            <td class="square">x</td>
+            <td class="square">x</td>
+            <td class="square">o</td>
+        </tr>
+        <tr>
+            <td class="square">o</td>
+            <td class="square">o</td>
+            <td class="square">x</td>
+        </tr>
+    </table>
+</body>
+
+</html>
